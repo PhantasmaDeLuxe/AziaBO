@@ -63,7 +63,7 @@ const generateCartProduct = (img, title, qtyNumber, price, productCost, id) => {
                     <div class="cart-product__quantity">
                         <div class="cart-product__button cart-product__button-minus">-</div>
                         <div class="cart-product__input">
-                            <input class="cart-product-field" data-price="${productCost}" type="text"  value="${qtyNumber}">
+                            <input class="cart-product-field" data-price="${productCost}" type="text"  value="${qtyNumber}" disabled>
                         </div>
                         <div class="cart-product__button cart-product__button-plus">+</div>
                     </div>
