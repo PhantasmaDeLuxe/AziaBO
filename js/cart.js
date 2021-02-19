@@ -3,7 +3,10 @@ const cartProductsList = document.querySelector('.cart-content__list'); //кла
 const cart = document.querySelector('.cart'); //сама иконка корзины, чтобы задавать корзине класс active когда там что-нибудь есть
 const cartQuantity = document.querySelector('.cart-quantity'); //здесь будет отображаться количество товаров в корзине
 const fullPrice = document.querySelector('.fullprice'); // общая сумма
+const orderModalOpenProd = document.querySelector('.order-modal__btn');
+const orderModalList = document.querySelector('.order-modal__list');
 let price = 0; //итоговое число, которое будет добавляться в fullPrice после пересчетов
+let productArray = []; //список товаров в модальном окне оформления заказа
 
 //Добавляем рандомный Id товару
 const randomId = () => {
@@ -63,7 +66,7 @@ const generateCartProduct = (img, title, qtyNumber, price, productCost, id) => {
                     <div class="cart-product__quantity">
                         <div class="cart-product__button cart-product__button-minus">-</div>
                         <div class="cart-product__input">
-                            <input class="cart-product-field" data-price="${productCost}" type="text"  value="${qtyNumber}" disabled>
+                            <input class="cart-product-field" data-price="${productCost}" type="text"  value="${qtyNumber}">
                         </div>
                         <div class="cart-product__button cart-product__button-plus">+</div>
                     </div>
@@ -98,7 +101,6 @@ productsBtn.forEach(el => {
         let title =  parent.querySelector('.item-product__title').textContent;
         let qtyNumber = Number(parent.querySelector('.input-field').value);
         let productCost = Number(parent.querySelector('.input-field').dataset.price);
-        console.log(productCost);
    
         let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.item-product__price').textContent));
         
@@ -133,10 +135,7 @@ const calculateSeparateProduct = (cartItem, action) => {
     currentPrice =  Number(input.value) * Number(input.dataset.price);
     cartItem.querySelector('.cart-product__price').textContent = `${normalPrice(currentPrice)} ₽`;
     
-
 }
-
-
 
 cartProductsList.addEventListener('click', (e) => {
     const input = e.target.closest('.cart-content__item').querySelector('.cart-product-field'); 
@@ -151,8 +150,6 @@ cartProductsList.addEventListener('click', (e) => {
                 minusFullPrice(productCost);
                 printFullPrice();
         }
-        
-
     }
     if (e.target.classList.contains('cart-product__button-plus')) {
             calculateSeparateProduct(
@@ -161,17 +158,44 @@ cartProductsList.addEventListener('click', (e) => {
                 ); 
         plusFullPrice(productCost);
         printFullPrice();
-        
-
     }
-
 });
 
 
 /*************Модальное окно оформления заказа */
+let flag = 0;
+orderModalOpenProd.addEventListener('click', (e) => {
+    if (flag == 0) {
+        orderModalOpenProd.classList.add('open');
+        orderModalList.style.display = 'block';
+        flag = 1;
+    } else {
+        orderModalOpenProd.classList.remove('open');
+        orderModalList.style.display = 'none';
+        flag = 0;
+    }
+
+});
+
+const generateModalProduct = (img, title, price, id) => {
+    return `
+    <li class="order-modal__item">
+        <article class="order-modal__product order-product" data-id="${id}">
+            <img src="${img}" alt="" class="order-product__img"> 
+            <div class="order-product__text">
+                <h3 class="order-product__title">${title}</h3>
+                <span class="order-product__price">${normalPrice(price)}</span>
+            </div>
+            <button class="order-product__delete">Удалить</button>
+        </article>
+    </li>
+    `;
+}
+
 const modal = new Modal ({
     isOpen: (modal) => {
         let array = cartProductsList.querySelector('.simplebar-content').children;
+        console.log(array)
         let fullprice = fullPrice.textContent;
         let length = array.length;
         
@@ -182,21 +206,22 @@ const modal = new Modal ({
 			let title = item.querySelector('.cart-product__title').textContent;
 			let priceString = priceWithoutSpaces(item.querySelector('.cart-product__price').textContent);
 			let id = item.querySelector('.cart-product').dataset.id;
-
-			//orderModalList.insertAdjacentHTML('afterbegin', generateModalProduct(img, title, priceString, id));
+            
+			orderModalList.insertAdjacentHTML('afterbegin', generateModalProduct(img, title, priceString, id));
 
             let obj = {};
 			obj.title = title;
 			obj.price = priceString;
-			//productArray.push(obj);
+			productArray.push(obj);
         }
        
     },
     isClose: () => {
-
+        
     },
 
 });
+/*
 document.querySelector('.order').addEventListener('submit', (e) => {
 	e.preventDefault();
 	let self = e.currentTarget;
@@ -225,4 +250,4 @@ document.querySelector('.order').addEventListener('submit', (e) => {
 
 	self.reset();
 });
-
+*/

@@ -150,6 +150,4 @@ class Modal {
         });
         document.body.style.paddingRight = '0px';
     }
-
-
 }
