@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АзияВО</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/simplebar.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/icons/favicon.png" type="image/png">
 </head>
 <body>
 
@@ -46,28 +50,7 @@
                 </div>
                 <div class="cart__content cart-content" >
                     <ul class="cart-content__list" data-simplebar>
-                        <!--
-                        <li class="cart-content__item">
-                            <article class="cart-content__product cart-product" data-id="${id}">
-                                <img src="${img}" alt="macbook" class="cart-product__img" width="100">
-                                <div class="cart-product__text">
-                                    <h3 class="cart-product__title">title</h3>
-                                    <span class="cart-product__qty">100 ₽</span> 
-                                    <div class="cart-product__quantity">
-                                        <div class="cart-product__button cart-product__button-minus">-</div>
-                                        <div class="cart-product__input">
-                                            <input class="cart-product-field" data-price="100" type="text"  value="1">
-                                        </div>
-                                        <div class="cart-product__button cart-product__button-plus">+</div>
-                                    </div>
-                                    <span class="cart-product__price"> 100 ₽</span>
-                                </div>
-                                <div class="cart-product__delete" aria-label="Удалить товар"></div>
-                            </article>
-                        </li>
-                        -->
-                        
-                
+
                     </ul>
                     <div class="cart-content__bottom">
                         <div class="cart-content__fullprice">
@@ -85,16 +68,13 @@
         </div>
     </header>
 
-
-
-
     <section class="banner">
         <div class="swiper-container banner__inner banner-inner">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide banner-inner__slide banner-slide">
-                    <img src="image/banner/bg-viet2.webp" alt="">
+                    <img src="image/banner/bg-viet.webp" alt="">
                     <div class="banner-slide__content">
                         <div class="banner-slide__column">
                             <div class="banner-slide__logo">Оля-ля!</div>
@@ -102,13 +82,10 @@
                             <p class="banner-slide__subtitle">Срок акции ограничен</p>
                             <button class="banner-slide__button btn btn-white">Все акции</button>
                         </div>
-                        
-                        
                     </div>
-                    
                 </div> 
                 <div class="swiper-slide banner-inner__slide banner-slide">
-                    <img src="image/banner/bg-viet2.webp" alt="">
+                    <img src="image/banner/bg-viet.webp" alt="">
                     <div class="banner-slide__content">
                         <div class="banner-slide__column">
                             <div class="banner-slide__logo">Оля-ля!</div>
@@ -322,13 +299,16 @@
                         <button type="button" class="catalog-nav__btn is-active" data-filter="all">Все</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button type="button" class="catalog-nav__btn" data-filter="salad">Салаты</button>
+                        <button type="button" class="catalog-nav__btn" data-filter="roll">Спринг роллы</button>
                     </li>
                     <li class="catalog-nav__item">
                         <button type="button" class="catalog-nav__btn" data-filter="soup">Супы</button>
                     </li>
                     <li class="catalog-nav__item">
                         <button type="button" class="catalog-nav__btn" data-filter="dish">Горячее</button>
+                    </li>
+                    <li class="catalog-nav__item">
+                        <button type="button" class="catalog-nav__btn" data-filter="drink">Напитки</button>
                     </li>
                     
                 </ul>
@@ -345,12 +325,12 @@
                                 <div class="product-label__text icon-hot"></div>
                                 <div class="product-label__text icon-sale"></div>
                             </div>
-                            <img src="image/viet-product/fo-taj-lan.webp" alt="">
+                            <img src="image/viet-product/soup/soup4.webp" alt="">
                         </a>
                         <div class="item-product__body">
-                            <h3  class="catalog-item__title item-product__title">Фо Тай Лан </h3>
+                            <h3  class="catalog-item__title item-product__title">Суп 1</h3>
                             <p class="catalog-item__description">
-                                Cуп Фо с говяжьей вырезкой, обжаренной с чесноком, имбирем и острым перцем. Подаётся с соусами Зам Той (маринад с чесноком и чили) и Шрирача (острый соус).						
+                                Описание супа						
                             </p>
     
                              <div class="catalog-item__footer">
@@ -383,10 +363,10 @@
                                 
                         <a href="#" class="catalog-item__img item-product__image ibg">
                             <div class="item-product__label product-label">
-                                <div class="product-label__text icon-hot">Острый</div>
+                                <div class="product-label__text icon-hot"></div>
                                 <div class="product-label__text icon-sale"></div>
                             </div>
-                            <img src="image/viet-product/pho-bo.webp" alt="">
+                            <img src="image/viet-product/soup/pho-bo.webp" alt="">
                         </a>
                         <div class="item-product__body">
                             <h3  class="catalog-item__title item-product__title">Фо Бо</h3>
@@ -425,12 +405,12 @@
                                 <div class="product-label__text icon-hot"></div>
                                 <div class="product-label__text icon-sale"></div>
                             </div>
-                            <img src="image/viet-product/7.webp" alt="">
+                            <img src="image/viet-product/soup/fo-tom.webp" alt="">
                         </a>
                         <div class="item-product__body">
-                            <h3  class="catalog-item__title item-product__title">Бун Том</h3>
+                            <h3  class="catalog-item__title item-product__title">Том Ям</h3>
                             <p class="catalog-item__description">
-                                Суп с креветками и рисовой лапшой Бун, приготовленный на пасте Том Ям</p>
+                                Суп с креветками и рисовой лапшой, приготовленный на пасте Том Ям</p>
     
                             <div class="catalog-item__footer">
                                 <div class="item-product__quantity quantity">
@@ -460,14 +440,14 @@
                                 
                         <a href="#" class="catalog-item__img item-product__image ibg">
                             <div class="item-product__label product-label">
-                                <div class="product-label__text icon-hot">Острый</div>
-                                <div class="product-label__text icon-sale">Цена снижена</div>
+                                <div class="product-label__text icon-hot"></div>
+                                <div class="product-label__text icon-sale"></div>
                             </div>
-                            <img src="image/viet-product/4.jpg" alt="">
+                            <img src="image/viet-product/soup/fo-ga.webp" alt="">
                         </a>
                         <div class="item-product__body">
-                            <h3  class="catalog-item__title item-product__title">Суп ФуФу</h3>
-                            <p class="catalog-item__description">Судя по фото, суп на кокосовом молоке, остренький, с лапшой, то ли баклажаном, то ли черным хлебом.</p>
+                            <h3  class="catalog-item__title item-product__title">Фо Га</h3>
+                            <p class="catalog-item__description">Классический суп Фо с курицей и чем-то там еще на мясном бульоне</p>
     
                             <div class="catalog-item__footer">
                                 <div class="item-product__quantity quantity">
@@ -502,13 +482,87 @@
                                 <div class="product-label__text icon-hot"></div>
                                 <div class="product-label__text icon-sale"></div>
                             </div>
-                            <img src="image/viet-product/5.webp" alt="">
+                            <img src="image/viet-product/dish/noodles1.jpg" alt="">
                         </a>
                         <div class="item-product__body">
-                            <h3  class="catalog-item__title item-product__title">Га Чуа Нгот</h3>
+                            <h3  class="catalog-item__title item-product__title">Лапша 1</h3>
                             <p class="catalog-item__description">
-                                Курица в кисло-сладком соусе с имбирём и чесноком. Подаётся с рисом, приготовленным на пару.</p>
-    
+                               Описание лапши 1</p>
+                            <div class="item-product__choice product-choice">
+                                <div class="product-choice__label">Лапша на выбор:</div>
+                                <div class="product-choice__options options">
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="buckwheat1" value="Гречневая" name="noodles" checked>
+                                        <label for="buckwheat1" class="options__label options__label-buckwheat"> <span>Гречневая</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="rice1" value="Стеклянная" name="noodles">
+                                        <label for="rice1" class="options__label options__label-rice"> <span>Стеклянная</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="wheat1" value="Пшеничная" name="noodles">
+                                        <label for="wheat1" class="options__label options__label-wheat"> <span>Пшеничная</span> </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                                <div class="catalog-item__footer">
+                                    <div class="item-product__quantity quantity">
+                                        <div class="quantity__button quantity__button-minus minus"></div>
+                                        <div class="quantity__input">
+                                            <input class="input-field" data-price="100" type="text" name="form[]" value="1">
+                                        </div>
+                                        <div class="quantity__button quantity__button-plus plus"></div>
+                                    </div>
+                                    <div class="catalog-item__bottom">
+                                        <div class="catalog-item__price item-product__price">
+                                            <span class="catalog-item__price-value subtotal hidden">100</span>
+                                            <span class="catalog-item__currency hidden">&#8381;</span>
+                                            <span class="">100</span>
+                                            <span class="catalog-item__currency">&#8381;</span>
+                                        </div> 
+                                        <button class="item-product__button item-product__button-done" type="button">Добавлено</button>
+                                        <button class="item-product__button item-product__button-add" type="button">В корзину</button>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="catalog-body__item catalog-item" data-category="dish">
+                    <div class="item-product">
+                                
+                        <a href="#" class="catalog-item__img item-product__image ibg">
+                            <div class="item-product__label product-label">
+                                <div class="product-label__text icon-hot"></div>
+                                <div class="product-label__text icon-sale"></div>
+                            </div>
+                            <img src="image/viet-product/dish/noodles2.jpg" alt="">
+                        </a>
+                        <div class="item-product__body">
+                            <h3  class="catalog-item__title item-product__title">Лапша 2</h3>
+                            <p class="catalog-item__description">
+                               Описание лапши 2</p>
+                            <div class="item-product__choice product-choice">
+                                <div class="product-choice__label">Лапша на выбор:</div>
+                                <div class="product-choice__options options">
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="buckwheat2" value="Гречневая" name="noodles" checked>
+                                        <label for="buckwheat2" class="options__label options__label-buckwheat"> <span>Гречневая</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="rice2" value="Стеклянная" name="noodles">
+                                        <label for="rice2" class="options__label options__label-rice"> <span>Стеклянная</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="wheat2" value="Пшеничная" name="noodles">
+                                        <label for="wheat2" class="options__label options__label-wheat"> <span>Пшеничная</span> </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
                                 <div class="catalog-item__footer">
                                     <div class="item-product__quantity quantity">
                                         <div class="quantity__button quantity__button-minus minus"></div>
@@ -532,7 +586,119 @@
                         </div>
                     </div> 
                 </div>
-                <div class="catalog-body__item catalog-item" data-category="salad">
+                <div class="catalog-body__item catalog-item" data-category="dish">
+                    <div class="item-product">
+                                
+                        <a href="#" class="catalog-item__img item-product__image ibg">
+                            <div class="item-product__label product-label">
+                                <div class="product-label__text icon-hot"></div>
+                                <div class="product-label__text icon-sale"></div>
+                            </div>
+                            <img src="image/viet-product/dish/noodles3.jpg" alt="">
+                        </a>
+                        <div class="item-product__body">
+                            <h3  class="catalog-item__title item-product__title">Лапша 3</h3>
+                            <p class="catalog-item__description">
+                               Описание лапши 3</p>
+                            <div class="item-product__choice product-choice">
+                                <div class="product-choice__label">Лапша на выбор:</div>
+                                <div class="product-choice__options options">
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="buckwheat3" value="Гречневая" name="noodles" checked>
+                                        <label for="buckwheat3" class="options__label options__label-buckwheat"> <span>Гречневая</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="rice3" value="Стеклянная" name="noodles">
+                                        <label for="rice3" class="options__label options__label-rice"> <span>Стеклянная</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="wheat3" value="Пшеничная" name="noodles">
+                                        <label for="wheat3" class="options__label options__label-wheat"> <span>Пшеничная</span> </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                                <div class="catalog-item__footer">
+                                    <div class="item-product__quantity quantity">
+                                        <div class="quantity__button quantity__button-minus minus"></div>
+                                        <div class="quantity__input">
+                                            <input class="input-field" data-price="300" type="text" name="form[]" value="1">
+                                        </div>
+                                        <div class="quantity__button quantity__button-plus plus"></div>
+                                    </div>
+                                    <div class="catalog-item__bottom">
+                                        <div class="catalog-item__price item-product__price">
+                                            <span class="catalog-item__price-value subtotal hidden">300</span>
+                                            <span class="catalog-item__currency hidden">&#8381;</span>
+                                            <span class="">300</span>
+                                            <span class="catalog-item__currency">&#8381;</span>
+                                        </div> 
+                                        <button class="item-product__button item-product__button-done" type="button">Добавлено</button>
+                                        <button class="item-product__button item-product__button-add" type="button">В корзину</button>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="catalog-body__item catalog-item" data-category="dish">
+                    <div class="item-product">
+                                
+                        <a href="#" class="catalog-item__img item-product__image ibg">
+                            <div class="item-product__label product-label">
+                                <div class="product-label__text icon-hot"></div>
+                                <div class="product-label__text icon-sale"></div>
+                            </div>
+                            <img src="image/viet-product/dish/noodles4.jpg" alt="">
+                        </a>
+                        <div class="item-product__body">
+                            <h3  class="catalog-item__title item-product__title">Лапша 4</h3>
+                            <p class="catalog-item__description">
+                               Описание лапши 4</p>
+                            <div class="item-product__choice product-choice">
+                                <div class="product-choice__label">Лапша на выбор:</div>
+                                <div class="product-choice__options options">
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="buckwheat4" value="Гречневая" name="noodles" checked>
+                                        <label for="buckwheat4" class="options__label options__label-buckwheat"> <span>Гречневая</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="rice4" value="Стеклянная" name="noodles">
+                                        <label for="rice4" class="options__label options__label-rice"> <span>Стеклянная</span> </label>
+                                    </div>
+                                    <div class="options__item">
+                                        <input class="options__input" type="radio" id="wheat4" value="Пшеничная" name="noodles">
+                                        <label for="wheat4" class="options__label options__label-wheat"> <span>Пшеничная</span> </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                                <div class="catalog-item__footer">
+                                    <div class="item-product__quantity quantity">
+                                        <div class="quantity__button quantity__button-minus minus"></div>
+                                        <div class="quantity__input">
+                                            <input class="input-field" data-price="300" type="text" name="form[]" value="1">
+                                        </div>
+                                        <div class="quantity__button quantity__button-plus plus"></div>
+                                    </div>
+                                    <div class="catalog-item__bottom">
+                                        <div class="catalog-item__price item-product__price">
+                                            <span class="catalog-item__price-value subtotal hidden">300</span>
+                                            <span class="catalog-item__currency hidden">&#8381;</span>
+                                            <span class="">300</span>
+                                            <span class="catalog-item__currency">&#8381;</span>
+                                        </div> 
+                                        <button class="item-product__button item-product__button-done" type="button">Добавлено</button>
+                                        <button class="item-product__button item-product__button-add" type="button">В корзину</button>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="catalog-body__item catalog-item" data-category="roll">
                     <div class="item-product">
                                 
                         <a href="#" class="catalog-item__img item-product__image ibg">
@@ -569,7 +735,7 @@
                         </div> 
                     </div> 
                 </div>
-                <div class="catalog-body__item catalog-item" data-category="salad">
+                <div class="catalog-body__item catalog-item" data-category="roll">
                     <div class="item-product">
                                 
                         <a href="#" class="catalog-item__img item-product__image ibg">
@@ -616,20 +782,123 @@
                                 <div class="product-label__text icon-hot"></div>
                                 <div class="product-label__text icon-sale"></div>
                             </div>
-                            <img src="image/viet-product/8.png" alt="">
+                            <img src="image/viet-product/dish/rice1.jpg" alt="">
                         </a>
                         <div class="item-product__body">
-                            <h3  class="catalog-item__title item-product__title">Мьен Сао Га</h3>
-                            <p class="catalog-item__description">Стеклянная лапша, обжаренная с кусочками куриного филе, черными грибами, ростками бобов, луком и кинзой в соевом соусе.</p>
+                            <h3  class="catalog-item__title item-product__title">Рис1</h3>
+                            <p class="catalog-item__description">Описание риса1</p>
     
                             <div class="catalog-item__footer">
-                                <div class="item-product__quantity quantity">
-                                    <div class="quantity__button quantity__button-minus minus"></div>
-                                    <div class="quantity__input">
-                                        <input class="input-field" data-price="450" type="text" name="form[]" value="1">
-                                    </div>
-                                    <div class="quantity__button quantity__button-plus plus"></div>
+
+                                <div class="quantity__input"> 
+                                    <input class="input-field visually-hidden" data-price="450" type="text" name="form[]" value="1">
                                 </div>
+                                    
+                                <div class="catalog-item__bottom">
+                                    <div class="catalog-item__price item-product__price">
+                                        <span class="catalog-item__price-value subtotal hidden" >450</span>
+                                        <span class="catalog-item__currency hidden">&#8381;</span>
+                                        <span class="">450</span>
+                                        <span class="catalog-item__currency">&#8381;</span>
+                                    </div> 
+                                    <button class="item-product__button item-product__button-done" type="button">Добавлено</button>
+                                    <button class="item-product__button item-product__button-add" type="button">В корзину</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="catalog-body__item catalog-item" data-category="dish">
+                    <div class="item-product">
+                                
+                        <a href="#" class="catalog-item__img item-product__image ibg">
+                            <div class="item-product__label product-label">
+                                <div class="product-label__text icon-hot"></div>
+                                <div class="product-label__text icon-sale"></div>
+                            </div>
+                            <img src="image/viet-product/dish/rice2.jpg" alt="">
+                        </a>
+                        <div class="item-product__body">
+                            <h3  class="catalog-item__title item-product__title">Рис2</h3>
+                            <p class="catalog-item__description">Описание риса2</p>
+    
+                            <div class="catalog-item__footer">
+
+                                <div class="quantity__input"> 
+                                    <input class="input-field visually-hidden" data-price="450" type="text" name="form[]" value="1">
+                                </div>
+                                    
+                                <div class="catalog-item__bottom">
+                                    <div class="catalog-item__price item-product__price">
+                                        <span class="catalog-item__price-value subtotal hidden" >450</span>
+                                        <span class="catalog-item__currency hidden">&#8381;</span>
+                                        <span class="">450</span>
+                                        <span class="catalog-item__currency">&#8381;</span>
+                                    </div> 
+                                    <button class="item-product__button item-product__button-done" type="button">Добавлено</button>
+                                    <button class="item-product__button item-product__button-add" type="button">В корзину</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="catalog-body__item catalog-item" data-category="dish">
+                    <div class="item-product">
+                                
+                        <a href="#" class="catalog-item__img item-product__image ibg">
+                            <div class="item-product__label product-label">
+                                <div class="product-label__text icon-hot"></div>
+                                <div class="product-label__text icon-sale"></div>
+                            </div>
+                            <img src="image/viet-product/dish/rice3.jpg" alt="">
+                        </a>
+                        <div class="item-product__body">
+                            <h3  class="catalog-item__title item-product__title">Рис3</h3>
+                            <p class="catalog-item__description">Описание риса3</p>
+    
+                            <div class="catalog-item__footer">
+
+                                <div class="quantity__input"> 
+                                    <input class="input-field visually-hidden" data-price="450" type="text" name="form[]" value="1">
+                                </div>
+                                    
+                                <div class="catalog-item__bottom">
+                                    <div class="catalog-item__price item-product__price">
+                                        <span class="catalog-item__price-value subtotal hidden" >450</span>
+                                        <span class="catalog-item__currency hidden">&#8381;</span>
+                                        <span class="">450</span>
+                                        <span class="catalog-item__currency">&#8381;</span>
+                                    </div> 
+                                    <button class="item-product__button item-product__button-done" type="button">Добавлено</button>
+                                    <button class="item-product__button item-product__button-add" type="button">В корзину</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="catalog-body__item catalog-item" data-category="dish">
+                    <div class="item-product">
+                                
+                        <a href="#" class="catalog-item__img item-product__image ibg">
+                            <div class="item-product__label product-label">
+                                <div class="product-label__text icon-hot"></div>
+                                <div class="product-label__text icon-sale"></div>
+                            </div>
+                            <img src="image/viet-product/dish/rice4.jpg" alt="">
+                        </a>
+                        <div class="item-product__body">
+                            <h3  class="catalog-item__title item-product__title">Рис4</h3>
+                            <p class="catalog-item__description">Описание риса4</p>
+    
+                            <div class="catalog-item__footer">
+
+                                <div class="quantity__input"> 
+                                    <input class="input-field visually-hidden" data-price="450" type="text" name="form[]" value="1">
+                                </div>
+                                    
                                 <div class="catalog-item__bottom">
                                     <div class="catalog-item__price item-product__price">
                                         <span class="catalog-item__price-value subtotal hidden" >450</span>
@@ -664,10 +933,13 @@
                     
                 </div>
                 <div class="contacts__end">
+                    <!--
                     <div class="contacts__item">
                         <h3 class="contacts__title">Адрес</h3>
                         <p class="contacts__text">АдресАдресАдресАдрес</p>
                     </div>
+                    -->
+                    
                     <div class="contacts__item">
                         <h3 class="contacts__title">Телефон</h3>
                         <p class="contacts__text">
@@ -711,7 +983,7 @@
                     <img src="image/banner/dragon.png" alt="" width="60" height="60">
                 </a>
                 <div class="footer-logo__title">
-                    <p class="footer-logo__title-top">Кафе</p>
+                    
                     <p class="footer-logo__title-bottom">Азия ВО</p>
                 </div>
             </div>
@@ -737,18 +1009,16 @@
             <div class="container sub-footer__container">
                 <div class="sub-footer__copy">
                     
-                    ©2021 <a href="#" class="copy-link" target="_blank">Tania-nia</a> 
+                    2021 <a href="#" class="copy-link" target="_blank">Tania-nia</a> 
                 </div>
                 <div class="sub-footer__social social-footer">
                     <a href="https://www.instagram.com/azia_bo/" class="social-footer__item" target="_blank">
                         <img src="image/icons/instagram-sketched-logo.svg" width="25" alt="">
                     </a>
                     <a href="#" class="social-footer__item">
-                        <img src="image/icons/instagram-sketched-logo.svg" width="25" alt="">
+                        <a href="https://wa.me/+79265729595" class="info-footer__tel">0 000 000 00 00</a>
                     </a>
-                    <a href="#" class="social-footer__item">
-                        <img src="image/icons/instagram-sketched-logo.svg" width="25" alt="">
-                    </a>
+                    
                 </div>
             </div>
            
@@ -761,35 +1031,44 @@
             <div class="modal__content order-modal__content">
                 <div class="order-modal__top">
                     <h2 class="order-modal__title">Оформление заказа</h2>
-                    <span class="order-modal__number">Заказ № 3456 67</span>
+                    <span class="order-modal__number">Заказ № 24,02</span>
                 </div>
-                <div class="order-modal__info">
-                    <div class="order-modal__quantity order-modal__info-item">Товаров в заказе:<span> 3 шт</span></div>
-                    <div class="order-modal__summ order-modal__info-item">Общая сумма заказа:<span> 568 789 ₽</span></div>
-                    <div class="order-modal__products order-modal__info-item">
-                        
-                        <button class="order-modal__btn">Состав заказа</button>
-                        <ul class="order-modal__list">
+                <div class="form">
+                    <form action="#" method="POST" class="order-modal__form order form-send" id="form">
+                        <div class="order-modal__info">
+                            <div class="order-modal__quantity order-modal__info-item">Товаров в заказе:<span> 0 шт</span></div>
+                            <label class="order-modal__summ order-modal__info-item">Общая сумма заказа:
+                                <span> 0 ₽</span>
+                                <input type="text" id="formTotal" name="formTotal" class="order__input visually-hidden" value="1">
+                            </label>
+                            <div class="order-modal__message">
+                                <label for="formMessage" class="order-modal__label">Адрес доставки:</label>
+                                <textarea name="adress" id="formMessage" class="form__input"></textarea>
+                            </div>
+                            <div class="order-modal__products order-modal__info-item">
+                                
+                                <button type="button" class="order-modal__btn">Состав заказа</button>
+                                <ul class="order-modal__list">
+                                    
+                                </ul> 
+                            </div>
+                            <label class="order__label">
+                                <span class="order__text">Ваше имя</span>
+                                <input type="text" id="formName" name="name" class="order__input _req">
+                            </label>
+                            <label class="order__label">
+                                <span class="order__text">Номер телефона</span>
+                                <input type="tel" id="formTel"  data-validate-field="tel" name="tel" class="order__input _req">
+                            </label>
                             
-                        </ul> 
-                    </div>
+                            <button type="submit" class="order__btn">Оформить заказ</button>
+                        </div>
+                       
+                            
+        
+                        </form>
                 </div>
-                <form action="POST" class="order-modal__form order form-send">
-                    <label class="order__label">
-                        <span class="order__text">Ваше имя</span>
-                        <input type="text" name="Имя" class="order__input">
-                    </label>
-                    <label class="order__label">
-                        <span class="order__text">Номер телефона</span>
-                        <input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
-                    </label>
-                    <label class="order__label">
-                        <span class="order__text">Электронная почта</span>
-                        <input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
-                    </label>
-                    <button class="order__btn">Оформить заказ</button>
-
-                </form>
+                
             </div>
         </div>
         
@@ -863,12 +1142,18 @@
     <script src="js/modal.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/products-sl.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/form.js"></script> 
+    
+
+   
+   
     <script src="js/catalog.js"></script>
     <script src="js/up-button.js"></script>
-    <script src="js/form.js"></script>
+   
 
 </body>
 </html>
